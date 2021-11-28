@@ -1,0 +1,108 @@
+#servizio {
+    margin-bottom: 25vh;
+}
+
+#servizio .div-sx {
+
+    width: 19.7vw;
+    height: 100vh;
+    margin-left: 12.5vw;
+    transform: translateY(-20%);
+
+}
+
+#servizio .div-sx .pos-div-sx{
+    transform: translateY(10vh);
+}
+
+#servizio .marb{
+    margin-bottom: 5vh;
+}
+
+#servizio .div-sx h1{
+    color: #1E2022;
+    font-size: 2.3vw;
+    font-weight: 400;
+}
+
+#servizio .div-dx {
+
+    width: 67.8vw;
+    height: auto;
+    
+}
+
+
+#servizio .div-sx h1 span{
+    color: #036456;
+}
+
+#servizio .div-sx p {
+    color: #677788;
+    font-size: 0.9vw;
+}
+
+#servizio a {
+    background-color: #036456;
+    color: #fff;
+    font-size: 0.9vw;
+}
+
+#servizio .second {
+    margin-top: 5vh;
+}
+
+#servizio .second h2 {
+    font-size: 2.31vw;
+    font-weight: 400;
+}
+
+#servizio .second p {
+    font-size: 1.071vw;
+}
+
+#servizio .second a {
+    font-size: 1.238vw;
+}
+
+#servizio .box {
+    width: 18.2vw;
+    height: 15vh;
+    border: 3px solid #036456;
+}
+
+#servizio .box p {
+    color: #1E2022;
+    font-size: 2.36vh;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#servizio .box:hover {
+    box-shadow: 4px 6px #E6FAEE,
+                4px -6px #E6FAEE,
+                -4px 6px #E6FAEE,
+                -4px -6px #E6FAEE;
+}
+
+#servizio .box:hover p{
+    text-align: start;
+    font-size: 1.22vh;
+}
+
+#servizio .box[index="4"]:hover p, #servizio .box[index="7"]:hover p, #servizio .box[index="8"]:hover p, #servizio .box[index="9"]:hover p, #servizio .box[index="10"]:hover p, #servizio .box[index="11"]:hover p{
+    font-size: 1.22vh;
+}
+
+#servizio .box[index="5"]:hover p{
+    font-size: 1.26vh;
+}
+
+#servizio .box[index="6"]:hover p{
+    font-size: 1.3vh;
+}
+
+#servizio .box[index="12"]:hover p, #servizio .box[index="13"]:hover p, #servizio .box[index="14"]:hover p{
+    font-size: 1vh;
+}
+

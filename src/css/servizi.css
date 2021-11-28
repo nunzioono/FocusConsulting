@@ -1,0 +1,47 @@
+#servizi {
+    height: 100vh;
+    margin: 5vh 0 25vh 0;
+}
+
+#servizi .riga {
+
+    width: 75vw;
+}
+
+#servizi .card {
+    border: 2px solid #036456;
+    border-radius: 1rem;
+}
+
+#servizi h1 {
+    font-size: 2vw;
+}
+
+#servizi p {
+    font-size: 1.1vw;
+}
+
+#servizi .card {
+    height: 14.2vw;
+    width: 20.8vw;
+    text-decoration: none;
+}
+
+#servizi .card div {
+    height: 80%;
+}
+
+#servizi .card img {
+    width: 2vw;
+    height: 2vw;
+}
+
+#servizi .card h5 {
+    font-size: 1vw;
+    color: #1e2022;
+}
+
+#servizi .card p {
+    font-size: .8vw;
+    color: #677788;
+}

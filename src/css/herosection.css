@@ -1,0 +1,40 @@
+#hero {
+    height: 100vh;
+}
+
+#hero .div-sx {
+    width: 31.5vw;
+    height: 100% !important;
+    margin-left: 12.5vw;
+}
+
+#hero .div-sx h1{
+    font-size: 2.2vw;
+    margin: 5vh 0;
+}
+
+#hero .div-sx p{
+    font-size: 1.1vw;
+    margin-bottom: 5vh;
+}
+
+#hero .div-sx a{
+    font-size: 1.1vw;
+}
+
+#hero .headers {
+    margin-top: -15vh;
+}
+
+#hero .div-dx {
+    width: 56vw;
+    height: 100% !important;
+}
+
+#hero .div-dx img{
+
+    width: 100%;
+    height: autoe;
+
+}
+

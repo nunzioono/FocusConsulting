@@ -1,0 +1,31 @@
+#chi-siamo {
+    height: 100vh;
+    margin-top: 5vh;
+}
+
+#chi-siamo h1, #chi-siamo h2 {
+    color: #1E2022;
+}
+
+#chi-siamo .paragraph:nth-child(1) p {
+    padding-right: 1.2vw;
+}
+
+#chi-siamo p {
+    color: #677788;
+}
+
+#chi-siamo h1 {
+    font-size: 2vw;
+}
+
+#chi-siamo h2 {
+    width: 33%;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+#chi-siamo p {
+    font-size: 1.1vw;
+    font-weight: 400;
+}

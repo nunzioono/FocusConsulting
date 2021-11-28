@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+
+    body {
+
+      font-size: 9px;
+
+    }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+
+  body {
+
+    font-size: 10px;
+
+  }
+
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+
+  body {
+
+    font-size: 11px;
+
+  }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+  body {
+
+    font-size: 12px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+
+  body {
+
+    font-size: 13px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1441px) {
+
+  body {
+
+    font-size: 14px;
+
+  }
+
+}

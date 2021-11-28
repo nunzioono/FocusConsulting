@@ -1,0 +1,19 @@
+.navbar-container{
+    background-color: rgba(255, 255, 255,0.7) !important;
+}
+
+.navbar-brand p {
+    color: #036456;
+}
+
+#navbar a, #navbar p { 
+    font-size: 1.1vw; 
+}
+
+#navbar button {
+
+    font-size: 1.1vw;
+
+}
+
+

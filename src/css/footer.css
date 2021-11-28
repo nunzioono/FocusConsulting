@@ -1,0 +1,37 @@
+#footer {
+    background-color: #036456;
+    padding-bottom: 5rem;
+}
+
+#footer .logo {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 2vw;
+}
+
+#footer .logo img{
+    width: 100%;
+}
+
+#footer p {
+    font-size: 0.9vw;
+    color: #fff;
+}
+
+#footer .section {
+    width: 20vw !important;
+    color: #fff;
+}
+
+#footer .section p{
+    margin-bottom: 2vh;
+}
+
+#footer .section .contatto{
+    font-size: 1.29vh;
+}
+
+#footer .section .contatto img{
+    width: 1.5vw;
+    margin-right: 2vw;
+}

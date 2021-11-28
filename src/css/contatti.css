@@ -1,0 +1,49 @@
+#contatti {
+    height: 100vh;
+}
+
+#contatti .div-sx {
+    width: 37.5vw;
+    margin-left:12.5vw;
+}
+
+#contatti .div-sx h1{
+    margin-bottom: 4vh;
+}
+
+#contatti .div-sx .contatto{
+    margin-bottom: 2.64vh;
+}
+
+#contatti .div-sx .contatto img{
+    width: 2.36vh;
+}
+#contatti .div-sx button{
+    margin-top: 5vh;
+    font-size: 2vh;
+}
+
+#messaggio{
+    height: 17.12vh !important;
+}
+
+.my-btn:focus {
+    border: 1px solid #036456;
+    box-shadow: #53b4a6 0 0 0 0.25rem;
+}
+
+#contatti .div-dx {
+    width: 50vw;
+}
+
+#contatti .my-container {
+    width: 24.4vw;
+}
+
+#contatti h1 {
+    font-size: 4.68vh;
+}
+
+#contatti p {
+    font-size: 1.1vw;
+}
