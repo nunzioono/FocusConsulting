@@ -1,6 +1,7 @@
 import "../css/herosection.css";
+import { Link } from "react-router-dom";
 
-function HeroSection (props){
+function HeroSection (){
     
     return (<div id="hero" className="d-flex flex-row w-100 mb-5">
             <Title></Title>
@@ -14,9 +15,7 @@ function HeroSection (props){
             <div className="headers">
                 <h1 className="fw-normal"><span style={{color:"#036456"}}>Focus Consulting</span> la<br/> nostra esperienza al<br/> tuo servizio</h1>
                 <p style={{color:"#677788"}}>sosteniamo le aziende nel migliorare e<br/> innovare il proprio business</p>
-                <a className="btn w-100" style={{width:"fit-content",backgroundColor:"#036456",color:"white"}} onClick={()=>{
-                    props.routeCallback(2);
-                }}>COME POSSIAMO AIUTARTI?</a>
+                <Link to="/contatti" className="btn w-100" style={{width:"fit-content",backgroundColor:"#036456",color:"white"}}>COME POSSIAMO AIUTARTI?</Link>
             </div>
         </div>);
     }

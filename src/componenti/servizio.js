@@ -1,11 +1,12 @@
 import { Component } from "react";
+import { Link } from "react-router-dom";
 import "../css/servizio.css";
 
 class Servizio extends Component{
 
     constructor(props){
         super();
-        this.id = props.index;
+        this.id = props.match.params.id;
         this.title=[];
         this.paragraph=[];
         this.h3= [];
@@ -97,7 +98,7 @@ class Servizio extends Component{
                                     return <>{seg}<br/></>;
                                 }
                             })}</p>
-                        <a className="btn" onClick={()=>{this.props.routeCallback(2)}}>COME POSSIAMO AIUTARTI?</a>
+                        <Link to="/contatti" className="btn">COME POSSIAMO AIUTARTI?</Link>
                     </div>
                 </div>
                 <div className="div-dx">
@@ -142,7 +143,7 @@ class Servizio extends Component{
                     {this.id!=1 &&<div className="mb-5">
                         {this.servizi.map((elem,i)=><p key={i}>{elem}</p>)}
                     </div>}
-                    <a className="btn mb-5" onClick={()=>{this.props.routeCallback(2)}}>SCRIVICI QUI</a>
+                    <Link to="/contatti" className="btn mb-5">SCRIVICI QUI</Link>
                 </div>
             </div>
         </div>
