@@ -1,4 +1,3 @@
-import { Component } from "react";
 import "../css/footer.css";
 
 function Footer(){
@@ -13,18 +12,18 @@ function Footer(){
             <div className="d-flex flex-row justify-content-around w-75 pt-5">
                 <div className="section d-flex flex-row mb-2">
                     <div className="logo d-flex justify-content-center align-items-center rounded-circle" style={{backgroundColor:"white"}}>
-                        <img src={path+"logo.png"}></img>
+                        <img alt="" src={path+"logo.png"}></img>
                     </div>
                     <p className="mb-0">Focus Consulting Srl</p>
                 </div>
                 <div className="section">
                     <p>Contatti</p>
                     <div className="contatto d-flex flex-row mb-2">
-                        <img src={path+"Icons/icone footer/place-white.svg"}></img>
+                        <img alt="" src={path+"Icons/icone footer/place-white.svg"}></img>
                         Via Taranto 1/C – 70022 Altamura BA
                     </div>
                     <div className="contatto d-flex flex-row mb-2">
-                        <img src={path+"Icons/icone footer/email-white.svg"}></img>
+                        <img alt="" src={path+"Icons/icone footer/email-white.svg"}></img>
                         info@focuscon.it
                     </div>
                     <p>P.IVA 06244360720</p>

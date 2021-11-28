@@ -1,5 +1,5 @@
 import "../css/servizi.css";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Servizi(){
 
@@ -26,15 +26,15 @@ function Servizi(){
 }
 
 function Card(props){
-    return <Link to={"/servizi/"+props.index} style={{textDecoration: "none"}}>
+    return <HashLink to={"/servizi/"+props.index} style={{textDecoration: "none"}}>
     <div className="card d-flex justify-content-center align-items-center shadow mt-5">
         <div className="d-flex flex-column justify-content-between w-75">
-            <img src={props.icon}></img>
+            <img alt="" src={props.icon}></img>
             <h5 className="mb-2">{props.title}</h5>
             <p className="mb-2">{props.paragraph}</p>
         </div>
     </div>
-    </Link>;
+    </HashLink>;
 }
 
 export default Servizi;

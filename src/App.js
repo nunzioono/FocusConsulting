@@ -20,7 +20,7 @@ class App extends Component {
     }
     window.addEventListener("orientationchange",()=>{
       this.setState({
-        screenOrientation: this.state.screenOrientation=="horizontal"?"vertical":"horizontal"
+        screenOrientation: this.state.screenOrientation==="horizontal"?"vertical":"horizontal"
       })
     })
   }
@@ -28,7 +28,7 @@ class App extends Component {
   render (){
 
     return <div className="position-relative">
-          {this.state.screenOrientation=="horizontal" && <div className="App container-fluid position-relative p-0">
+          {this.state.screenOrientation==="horizontal" && <div className="App container-fluid position-relative p-0">
             <Switch>
               <Route exact path="/" render={(props)=>
                 <>
@@ -50,7 +50,7 @@ class App extends Component {
               }/>
             </Switch>
           </div>}
-          {this.state.screenOrientation=="vertical"&&<Rotate></Rotate>}
+          {this.state.screenOrientation==="vertical"&&<Rotate></Rotate>}
           <Footer/>
         </div>;
   }

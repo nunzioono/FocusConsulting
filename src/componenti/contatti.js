@@ -6,11 +6,11 @@ function Contatti() {
                 <div className="my-container d-flex flex-column justify-content-between align-items-start h-50" style={{transform:"translateY(-30%)"}}>
                     <h1 style={{color:"#036456",fontWeight: "400"}}>Rimianiamo in<br/> contatto</h1>
                     <div className="contatto d-flex flex-row " style={{color:"#84919F",fontSize:"1vw"}}>
-                        <img className="me-3" src="../Icons/icone footer/place.svg"></img>
+                        <img alt="" className="me-3" src="../Icons/icone footer/place.svg"></img>
                         Via Taranto 1/C – 70022 Altamura BA
                     </div>
                     <div className="contatto d-flex flex-row " style={{color:"#84919F",fontSize:"1vw"}}>
-                        <img className="me-3" src="Icons/icone footer/email.svg"></img>
+                        <img alt="" className="me-3" src="Icons/icone footer/email.svg"></img>
                         info@focuscon.it
                     </div>
                     <div className="contatto d-flex flex-row">
@@ -31,7 +31,7 @@ function Contatti() {
                 </div>
             </div>
             <div className="div-dx w-50 h-100">
-                <iframe className="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.1808544990445!2d16.55482151565796!3d40.82399103869304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347876d4109f25b%3A0x9803a7d585c6bfc1!2sVia%20Taranto%2C%201C%2C%2070022%20Altamura%20BA!5e0!3m2!1sit!2sit!4v1634414605872!5m2!1sit!2sit" style={{border:"0"}} allowFullScreen="" loading="lazy"></iframe>
+                <iframe title="mappa" className="h-100 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.1808544990445!2d16.55482151565796!3d40.82399103869304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347876d4109f25b%3A0x9803a7d585c6bfc1!2sVia%20Taranto%2C%201C%2C%2070022%20Altamura%20BA!5e0!3m2!1sit!2sit!4v1634414605872!5m2!1sit!2sit" style={{border:"0"}} allowFullScreen="" loading="lazy"></iframe>
             </div>
     </div>;
 }
@@ -39,7 +39,7 @@ function Contatti() {
 function sendEmail(){
     const nome=document.getElementById("nome").value || "Mario Rossi";
     const mail=document.getElementById("mail").value || "mariorossi@gmail.com";
-    const mess=document.getElementById("messaggio").value || "Spett.bile Focus Consulting, in seguito ad una ricerca sul vostro bellissimo sito web sono interessato a una collaborazione, vorrei fissare un appuntamento e/o avere più informazioni riguardo ad una certificazione. Vi saluto con l'augurio di una buona giornata";
+    const mess=document.getElementById("messaggio").value || "Spett.bile Focus Consulting, vorrei avere più informazioni riguardo ad una certificazione:";
     const mailto= "info@focuscon.it";
     window.open('mailto:'+mailto+'?subject=Richiesta informazioni da '+nome+"&body="+mess+"%0APuoi rispondermi all'indirizzo: %0A"+mail+'');
 

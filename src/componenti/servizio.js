@@ -6,6 +6,7 @@ class Servizio extends Component{
 
     constructor(props){
         super();
+        window.scroll(0,0)
         this.id = props.match.params.id;
         this.title=[];
         this.paragraph=[];
@@ -77,7 +78,7 @@ class Servizio extends Component{
     render(){
         return <div>
         <div id="servizio" className="w-100">
-            <div className="d-flex w-100 vh-100">
+            <div className="first d-flex w-100 vh-100">
                 <div className="div-sx d-flex justify-content-start align-items-center">
                     <div className="pos-div-sx">
                         <h1 className="marb fw-normal">{
@@ -102,7 +103,7 @@ class Servizio extends Component{
                     </div>
                 </div>
                 <div className="div-dx">
-                    <img className="w-100" src={"../sezione"+this.id+".svg"}></img>
+                    <img alt="" className="w-100" src={"../sezione"+this.id+".svg"}></img>
                 </div>
             </div>
             <div className="second d-flex justify-content-center align-items-center vh-100">
@@ -114,7 +115,7 @@ class Servizio extends Component{
                             }else{
                                 return <>{seg}<br/></>;
                         }})}</h2>
-                    {this.id==1 && <div className="mb-5">
+                    {this.id==="1" && <div className="mb-5">
                         <div className="d-flex flex-row justify-content-between w-100 mb-2">
                             <this.Box index={0} title={this.servizi[0]} desc={this.servizi[16]}/>
                             <this.Box index={1} title={this.servizi[1]} desc={this.servizi[17]}/>
@@ -140,7 +141,7 @@ class Servizio extends Component{
                             <this.Box index={15} title={this.servizi[15]} desc={this.servizi[31]}/>
                         </div>
                     </div>}
-                    {this.id!=1 &&<div className="mb-5">
+                    {this.id!=="1" &&<div className="mb-5">
                         {this.servizi.map((elem,i)=><p key={i}>{elem}</p>)}
                     </div>}
                     <Link to="/contatti" className="btn mb-5">SCRIVICI QUI</Link>
@@ -252,7 +253,7 @@ class Servizio extends Component{
     
     Box(props){
     
-        return <div index={props.index} className="box d-flex justify-content-center align-items-center rounded p-3">
+        return <div key={props.index} index={props.index} className="box d-flex justify-content-center align-items-center rounded p-3">
             <p>{props.title}</p>
             <p className="d-none o-0 m-2">{props.desc}</p>
         </div>;

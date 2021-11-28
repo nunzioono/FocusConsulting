@@ -1,9 +1,8 @@
 import HeroSection from "./herosection";
 import ChiSiamo from "./chisiamo";
 import Servizi from "./servizi";
-import { Component } from "react";
 
-function Homepage(props) {    
+function Homepage() {    
 
     return <div className="position-relative d-flex flex-column justify-content-center align-items-center w-100">
         <HeroSection></HeroSection>

@@ -48,6 +48,10 @@
     font-size: 0.9vw;
 }
 
+#servizio .first {
+    margin-bottom: 0;
+}
+
 #servizio .second {
     margin-top: 5vh;
 }

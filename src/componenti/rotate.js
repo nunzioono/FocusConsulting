@@ -6,7 +6,7 @@ function Rotate(){
             <div className="d-flex flex-column justify-content-center align-items-center">
                 <h1>Ruota lo schermo!</h1>
                 <div className="rounded-circle my-3" style={{backgroundColor:"#e6faee"}}>
-                    <img className="p-3" src="Icons/screen_rotation.svg" style={{width:"8vh"}}></img>
+                    <img alt="" className="p-3" src="Icons/screen_rotation.svg" style={{width:"8vh"}}></img>
                 </div>
                 <p className="text-center">
                     Questo contenuto è disponibile solo per schermi orizzontali,<br/>
