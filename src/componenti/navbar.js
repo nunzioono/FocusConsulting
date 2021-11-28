@@ -5,7 +5,6 @@ import "../css/navbar.css";
 function Navbar(props) {
 
         let path;
-        console.log(props)
         !props.match.path.includes("contatti")&&!props.match.path.includes("servizi")?path="/":path="../";
 
         return <div id="navbar" className="position-relative navbar-container d-flex justify-content-center w-100" style={{zIndex:"10"}}>
