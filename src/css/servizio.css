@@ -1,7 +1,3 @@
-#servizio {
-    margin-bottom: 25vh;
-}
-
 #servizio .div-sx {
 
     width: 19.7vw;
@@ -53,7 +49,7 @@
 }
 
 #servizio .second {
-    margin-top: 5vh;
+    margin-bottom: 25vh;
 }
 
 #servizio .second h2 {
@@ -61,7 +57,7 @@
     font-weight: 400;
 }
 
-#servizio .second p {
+#servizio .second li {
     font-size: 1.071vw;
 }
 

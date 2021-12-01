@@ -9,6 +9,6 @@ Progettazione piani Operativi di Sicurezza (POS), D.lgs. 81/08
 Certificati di Prevenzione Incendi: Valutazione del rischio incendio sui luoghi di lavoro (DM 10.3.98) e Piani di emergenza
 Valutazione di rumore e vibrazioni secondo quanto richiesto dal Dlgs 81/2008
 Valutazione del rumore ambientale
-Atmosfere Esplosive (ATEX):\n- classificazione delle aree a rischio\n- valutazione rischio esplosione (Dlgs 81/2008)\n- progettazione secondo la Direttiva Atex
+Atmosfere Esplosive (ATEX):|classificazione delle aree a rischio|valutazione rischio esplosione (Dlgs 81/2008)|progettazione secondo la Direttiva Atex
 Marcatura CE di macchine, quasi-macchine e linee di produzione
 SCRIVICI QUI

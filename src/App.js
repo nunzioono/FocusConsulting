@@ -5,7 +5,7 @@ import Footer from "./componenti/footer";
 import Contatti  from "./componenti/contatti";
 import Servizio  from "./componenti/servizio";
 import { Component } from "react";
-import { Switch, Route } from "react-router";
+import { Switch, Route, Redirect } from "react-router";
 
 class App extends Component {
 
@@ -42,12 +42,7 @@ class App extends Component {
                   <Contatti {...props}/>
                 </>
               }/>
-              <Route path="/servizi/:id" render={(props)=>
-                <>
-                  <Navbar {...props}/>
-                  <Servizio {...props}/>
-                </>
-              }/>
+              <Route path="/servizi/:id" render={(props)=>parseInt(props.match.params.id)>=1&&parseInt(props.match.params.id)<7?<><Navbar {...props}/><Servizio {...props}/></>:<Redirect to="/"/>}/>
             </Switch>
           </div>}
           {this.state.screenOrientation==="vertical"&&<Rotate></Rotate>}

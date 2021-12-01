@@ -6,7 +6,6 @@ class Servizio extends Component{
 
     constructor(props){
         super();
-        window.scroll(0,0)
         this.id = props.match.params.id;
         this.title=[];
         this.paragraph=[];
@@ -46,6 +45,7 @@ class Servizio extends Component{
             for(let riga of righe){
                 this.servizi.push(riga);
             }
+
         }
     
     }
@@ -106,7 +106,7 @@ class Servizio extends Component{
                     <img alt="" className="w-100" src={"../sezione"+this.id+".svg"}></img>
                 </div>
             </div>
-            <div className="second d-flex justify-content-center align-items-center vh-100">
+            <div className="second d-flex justify-content-center align-items-start vh-75">
                 <div className="w-75">
                     <h2 className="fw-normal mb-5">{this.h3.map((seg)=>{
                             if(seg.includes("s/")){
@@ -141,9 +141,14 @@ class Servizio extends Component{
                             <this.Box index={15} title={this.servizi[15]} desc={this.servizi[31]}/>
                         </div>
                     </div>}
-                    {this.id!=="1" &&<div className="mb-5">
-                        {this.servizi.map((elem,i)=><p key={i}>{elem}</p>)}
-                    </div>}
+                    {this.id!=="1" &&
+                    <ul className="mb-5">
+                        {this.servizi.map((elem,i)=>{
+                        return elem.includes("|")?
+                        <><li key={i}>{elem.split("|")[0]}</li><ol>{elem.split("|").map((el,i)=>i!==0?<li>{el}</li>:<></>)}</ol></>:
+                        <li key={i}>{elem}</li>
+                        })}
+                    </ul>}
                     <Link to="/contatti" className="btn mb-5">SCRIVICI QUI</Link>
                 </div>
             </div>
@@ -202,7 +207,7 @@ class Servizio extends Component{
                 Certificati di Prevenzione Incendi: Valutazione del rischio incendio sui luoghi di lavoro (DM 10.3.98) e Piani di emergenza
                 Valutazione di rumore e vibrazioni secondo quanto richiesto dal Dlgs 81/2008
                 Valutazione del rumore ambientale
-                Atmosfere Esplosive (ATEX):\n- classificazione delle aree a rischio\n- valutazione rischio esplosione (Dlgs 81/2008)\n- progettazione secondo la Direttiva Atex
+                Atmosfere Esplosive (ATEX):|classificazione delle aree a rischio|valutazione rischio esplosione (Dlgs 81/2008)|progettazione secondo la Direttiva Atex
                 Marcatura CE di macchine, quasi-macchine e linee di produzione`;
             case "3":
                 return `Consulenza* ambientale* ed s/energeticas/
